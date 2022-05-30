@@ -3,7 +3,7 @@ const options = {
     vue: Vue,
   },
   async getFile(url) {
-    const res = await fetch('build/vue/' + url)
+    const res = await fetch('build/' + url)
     if (!res.ok) throw Object.assign(new Error(res.statusText + ' ' + url), { res })
     return {
       getContentData: (asBinary) => (asBinary ? res.arrayBuffer() : res.text()),

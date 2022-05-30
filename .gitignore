@@ -38,4 +38,4 @@ composer.lock
 .env
 yarn.lock
 yarn-error.log
-/assets/build
+/public/build

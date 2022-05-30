@@ -87,8 +87,8 @@ module.exports = function (grunt) {
         },
         files: {
           'public/build/bundle.js': [
-            // 'app/Views/vue/helper.js',
-            'app/Views/vue/App.js',
+            // 'app/Views/helper.js',
+            'app/Views/App.js',
             // 'assets/js/function_map.js',
             // 'assets/js/function_map_info.js',
           ],
@@ -146,7 +146,7 @@ module.exports = function (grunt) {
         },
       },
       scripts: {
-        // files: ['app/Views/vue/*.js'],
+        // files: ['app/Views/*.js'],
         files: ['app/**/*.js'],
         tasks: ['babel_multi_files'],
         options: {
