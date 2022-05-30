@@ -1,0 +1,491 @@
+CRITICAL - 2022-05-29 03:55:26 --> demo is not a valid database connection group.
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Common.php(312): CodeIgniter\Database\Config::connect('demo', true)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(9): db_connect('demo')
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#7 {main}
+CRITICAL - 2022-05-29 03:55:36 --> demo is not a valid database connection group.
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Common.php(312): CodeIgniter\Database\Config::connect('demo', true)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(9): db_connect('demo')
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#7 {main}
+CRITICAL - 2022-05-29 03:59:34 --> You have not selected a database type to connect to.
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Common.php(312): CodeIgniter\Database\Config::connect('default', true)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(9): db_connect()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+CRITICAL - 2022-05-29 03:59:36 --> You have not selected a database type to connect to.
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Common.php(312): CodeIgniter\Database\Config::connect('default', true)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(9): db_connect()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:07:05 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:07:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:05 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:06 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:49 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:50 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:51 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:51 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:51 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:52 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:08:52 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:08:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:09:05 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:09:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:09:06 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:09:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:09:06 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:09:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+ERROR - 2022-05-29 04:09:06 --> Error connecting to the database: Access denied for user '****'@'49.230.53.170' (using password: YES)
+CRITICAL - 2022-05-29 04:09:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'49.230.53.170' (using password: YES)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(12): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#8 {main}
+CRITICAL - 2022-05-29 04:09:30 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#5 {main}
+CRITICAL - 2022-05-29 04:11:39 --> Undefined variable: builder
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/rawin/Do...', 11, Array)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#6 {main}
+CRITICAL - 2022-05-29 04:11:40 --> Undefined variable: builder
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Users/rawin/Do...', 11, Array)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#6 {main}
+CRITICAL - 2022-05-29 04:12:53 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#5 {main}
+CRITICAL - 2022-05-29 04:19:53 --> syntax error, unexpected '$builder' (T_VARIABLE)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/rawin/Do...')
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#9 {main}
+CRITICAL - 2022-05-29 04:19:55 --> syntax error, unexpected '$builder' (T_VARIABLE)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/rawin/Do...')
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#9 {main}
+CRITICAL - 2022-05-29 04:23:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getCompiledSelect()
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#5 {main}
+ERROR - 2022-05-29 04:32:05 --> Table 'rawinbyc_findgis.test1' doesn't exist
+CRITICAL - 2022-05-29 04:32:05 --> Table 'rawinbyc_findgis.test1' doesn't exist
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#10 {main}
+ERROR - 2022-05-29 04:32:23 --> Table 'rawinbyc_findgis.test1' doesn't exist
+CRITICAL - 2022-05-29 04:32:23 --> Call to a member function getResult() on bool
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#5 {main}
+ERROR - 2022-05-29 04:32:25 --> Table 'rawinbyc_findgis.test1' doesn't exist
+CRITICAL - 2022-05-29 04:32:25 --> Call to a member function getResult() on bool
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#5 {main}
+ERROR - 2022-05-29 04:32:49 --> Table 'rawinbyc_findgis.test1' doesn't exist
+CRITICAL - 2022-05-29 04:32:49 --> Table 'rawinbyc_findgis.test1' doesn't exist
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#10 {main}
+ERROR - 2022-05-29 04:33:09 --> Table 'rawinbyc_findgis.test1' doesn't exist
+CRITICAL - 2022-05-29 04:33:09 --> Table 'rawinbyc_findgis.test1' doesn't exist
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#10 {main}
+ERROR - 2022-05-29 04:33:11 --> Table 'rawinbyc_findgis.test1' doesn't exist
+CRITICAL - 2022-05-29 04:33:11 --> Table 'rawinbyc_findgis.test1' doesn't exist
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#10 {main}
+ERROR - 2022-05-29 04:36:26 --> Table 'rawinbyc_findgis.test1' doesn't exist
+CRITICAL - 2022-05-29 04:36:26 --> Table 'rawinbyc_findgis.test1' doesn't exist
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/app/Controllers/Home.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#10 {main}
+CRITICAL - 2022-05-29 04:37:54 --> syntax error, unexpected 'try' (T_TRY)
+#0 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/rawin/Do...')
+#1 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/rawin/Downloads/codeigniter4-CodeIgniter4-202f41a/system/Commands/Server/rewrite.php(43): require_once('/Users/rawin/Do...')
+#9 {main}
+CRITICAL - 2022-05-29 07:49:28 --> layoutUsage filter must have a matching alias defined.
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('layoutUsage')
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-29 07:50:25 --> Class 'Config\LayoutUsage' not found
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-05-29 09:04:49 --> Invalid file: layout.php
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('layout', Array, true)
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/app/Filters/LayoutUsage.php(23): view('layout')
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#5 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-29 09:05:36 --> Invalid file: layout.php
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('layout', Array, true)
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/app/Filters/LayoutUsage.php(23): view('layout')
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#5 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-29 09:05:37 --> Invalid file: layout.php
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('layout', Array, true)
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/app/Filters/LayoutUsage.php(23): view('layout')
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#5 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-29 09:40:20 --> Invalid file: layout/index.php
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/index.ph...')
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Common.php(1089): CodeIgniter\View\View->render('layout/index', Array, true)
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/app/Filters/LayoutUsage.php(23): view('layout/index')
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#4 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#5 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-29 09:46:58 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:47:08 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:49:55 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:49:58 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:49:59 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:50:21 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:50:46 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:50:46 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:50:47 --> Call to a member function getValue() on null
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('/', 'before')
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 09:51:25 --> Declaration of App\Filters\LayoutUsage::before(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = NULL) must be compatible with CodeIgniter\Filters\FilterInterface::before(CodeIgniter\HTTP\RequestInterface $request, $arguments = NULL)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-29 09:59:12 --> Call to undefined method App\Controllers\Home::setResponseFormat()
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 10:00:58 --> Call to undefined method App\Controllers\Home::setResponseFormat()
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(832): App\Controllers\Home->index()
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-29 10:27:11 --> syntax error, unexpected '$isAPI' (T_VARIABLE), expecting ';' or ','
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/Users/rawin/Wo...')
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Lay...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Lay...')
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(166): spl_autoload_call('App\\Filters\\Lay...')
+#4 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('api', 'before')
+#5 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-29 10:27:47 --> Array to string conversion
+#0 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/app/Filters/LayoutUsage.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Users/rawin/Wo...', 18, Array)
+#1 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/Filters/Filters.php(173): App\Filters\LayoutUsage->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#2 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(393): CodeIgniter\Filters\Filters->run('api', 'before')
+#3 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/rawin/Workspace/codeigniter4-CodeIgniter4-202f41a/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,36 @@
+{
+  "name": "codeigniter4",
+  "version": "1.0.0",
+  "description": "codeigniter4",
+  "private": true,
+  "scripts": {
+    "grunt": "grunt",
+    "watch": "grunt watchs",
+    "pretty": "prettier --write \"./**/*.{js,json,php,html}\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@prettier/plugin-php": "^0.17.4",
+    "babel-preset-minify": "^0.5.1",
+    "dotenv": "^10.0.0",
+    "grunt": "~0.4.5",
+    "grunt-babel-multi-files": "^0.2.0",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-php": "^3.0.0",
+    "grunt-shell": "^4.0.0",
+    "open": "^8.2.1",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {},
+  "author": "Rawin",
+  "license": "Rawin"
+}
