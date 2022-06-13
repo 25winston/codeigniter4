@@ -21,7 +21,8 @@ class LayoutUsage implements FilterInterface
         if ($isAPI || $isAjax) {
             return;
         }
-        return service('response')->setBody(view('layout/layout'));
+
+        return service('response')->setBody(view('layouts/layout'));
     }
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)

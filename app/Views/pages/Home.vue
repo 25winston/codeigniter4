@@ -15,9 +15,21 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 export default {
-  data: function () {
-    return { text: 'data1' }
+  components: {},
+  setup() {
+    const text = 'Test'
+    const count = ref(0)
+    const inc = () => {
+      count.value++
+    }
+    return {
+      text,
+      count,
+      inc,
+    }
   },
+  mounted() {},
 }
 </script>

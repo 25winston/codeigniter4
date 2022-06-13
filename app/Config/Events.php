@@ -35,25 +35,15 @@ Events::on('pre_system', static function () {
         ob_start(static function ($buffer) {
 
             if (ENVIRONMENT === "production") { //Minify html
-                $search = array(
-                    '/\n/',      // replace end of line by a <del>space</del> nothing , if you want space make it down ' ' instead of ''
-                    '/\>[^\S ]+/s',    // strip whitespaces after tags, except space
-                    '/[^\S ]+\</s',    // strip whitespaces before tags, except space
-                    '/(\s)+/s',    // shorten multiple whitespace sequences
-                    '/<!--(.|\s)*?-->/' //remove HTML comments
-                );
-
-                $replace = array(
-                    '',
-                    '>',
-                    '<',
-                    '\\1',
-                    ''
-                );
-
+                $search = [
+                    '/\n/', // replace end of line by a space
+                    "/\>[^\S ]+/s", // strip whitespaces after tags, except space
+                    "/[^\S ]+\</s", // strip whitespaces before tags, except space
+                    "/(\s)+/s", // shorten multiple whitespace sequences
+                ];
+                $replace = [" ", ">", "<", '\\1'];
                 $buffer = preg_replace($search, $replace, $buffer);
             }
-
             return $buffer;
         });
     }

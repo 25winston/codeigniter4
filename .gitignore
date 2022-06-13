@@ -39,3 +39,4 @@ composer.lock
 yarn.lock
 yarn-error.log
 /public/build
+/writable/logs

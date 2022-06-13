@@ -173,7 +173,7 @@ class CodeIgniter
         Services::exceptions()->initialize();
 
         // Run this check for manual installations
-        if (! is_file(COMPOSER_PATH)) {
+        if (!is_file(COMPOSER_PATH)) {
             $this->resolvePlatformExtensions(); // @codeCoverageIgnore
         }
 
@@ -185,7 +185,7 @@ class CodeIgniter
 
         $this->initializeKint();
 
-        if (! CI_DEBUG) {
+        if (!CI_DEBUG) {
             Kint::$enabled_mode = false; // @codeCoverageIgnore
         }
     }
@@ -210,7 +210,7 @@ class CodeIgniter
         $missingExtensions = [];
 
         foreach ($requiredExtensions as $extension) {
-            if (! extension_loaded($extension)) {
+            if (!extension_loaded($extension)) {
                 $missingExtensions[] = $extension;
             }
         }
@@ -226,7 +226,7 @@ class CodeIgniter
     protected function initializeKint()
     {
         // If we have KINT_DIR it means it's already loaded via composer
-        if (! defined('KINT_DIR')) {
+        if (!defined('KINT_DIR')) {
             spl_autoload_register(function ($class) {
                 $class = explode('\\', $class);
 
@@ -253,7 +253,7 @@ class CodeIgniter
         Kint::$display_called_from = $config->displayCalledFrom;
         Kint::$expanded            = $config->expanded;
 
-        if (! empty($config->plugins) && is_array($config->plugins)) {
+        if (!empty($config->plugins) && is_array($config->plugins)) {
             Kint::$plugins = $config->plugins;
         }
 
@@ -262,10 +262,10 @@ class CodeIgniter
         RichRenderer::$theme  = $config->richTheme;
         RichRenderer::$folder = $config->richFolder;
         RichRenderer::$sort   = $config->richSort;
-        if (! empty($config->richObjectPlugins) && is_array($config->richObjectPlugins)) {
+        if (!empty($config->richObjectPlugins) && is_array($config->richObjectPlugins)) {
             RichRenderer::$value_plugins = $config->richObjectPlugins;
         }
-        if (! empty($config->richTabPlugins) && is_array($config->richTabPlugins)) {
+        if (!empty($config->richTabPlugins) && is_array($config->richTabPlugins)) {
             RichRenderer::$tab_plugins = $config->richTabPlugins;
         }
 
@@ -387,7 +387,7 @@ class CodeIgniter
         }
 
         // Never run filters when running through Spark cli
-        if (! defined('SPARKED')) {
+        if (!defined('SPARKED')) {
             // Run "before" filters
             $this->benchmark->start('before_filters');
             $possibleResponse = $filters->run($uri, 'before');
@@ -406,10 +406,10 @@ class CodeIgniter
         $returned = $this->startController();
 
         // Closure controller has run in startController().
-        if (! is_callable($this->controller)) {
+        if (!is_callable($this->controller)) {
             $controller = $this->createController();
 
-            if (! method_exists($controller, '_remap') && ! is_callable([$controller, $this->method], false)) {
+            if (!method_exists($controller, '_remap') && !is_callable([$controller, $this->method], false)) {
                 throw PageNotFoundException::forMethodNotFound($this->method);
             }
 
@@ -428,7 +428,7 @@ class CodeIgniter
         $this->gatherOutput($cacheConfig, $returned);
 
         // Never run filters when running through Spark cli
-        if (! defined('SPARKED')) {
+        if (!defined('SPARKED')) {
             $filters->setResponse($this->response);
 
             // Run "after" filters
@@ -454,7 +454,7 @@ class CodeIgniter
 
         unset($uri);
 
-        if (! $returnResponse) {
+        if (!$returnResponse) {
             $this->sendResponse();
         }
 
@@ -480,7 +480,7 @@ class CodeIgniter
     protected function detectEnvironment()
     {
         // Make sure ENVIRONMENT isn't already set by other means.
-        if (! defined('ENVIRONMENT')) {
+        if (!defined('ENVIRONMENT')) {
             define('ENVIRONMENT', $_SERVER['CI_ENVIRONMENT'] ?? 'production');
         }
     }
@@ -549,7 +549,7 @@ class CodeIgniter
         if (is_cli() && ENVIRONMENT !== 'testing') {
             // @codeCoverageIgnoreStart
             $this->request = Services::clirequest($this->config);
-        // @codeCoverageIgnoreEnd
+            // @codeCoverageIgnoreEnd
         } else {
             $this->request = Services::request($this->config);
             // guess at protocol if needed
@@ -565,7 +565,7 @@ class CodeIgniter
     {
         $this->response = Services::response($this->config);
 
-        if (! is_cli() || ENVIRONMENT === 'testing') {
+        if (!is_cli() || ENVIRONMENT === 'testing') {
             $this->response->setProtocolVersion($this->request->getProtocolVersion());
         }
 
@@ -603,7 +603,7 @@ class CodeIgniter
     {
         if ($cachedResponse = cache()->get($this->generateCacheName($config))) {
             $cachedResponse = unserialize($cachedResponse);
-            if (! is_array($cachedResponse) || ! isset($cachedResponse['output']) || ! isset($cachedResponse['headers'])) {
+            if (!is_array($cachedResponse) || !isset($cachedResponse['output']) || !isset($cachedResponse['headers'])) {
                 throw new Exception('Error unserializing page cache');
             }
 
@@ -736,7 +736,7 @@ class CodeIgniter
 
         // for backward compatibility
         $multipleFiltersEnabled = config('Feature')->multipleFilters ?? false;
-        if (! $multipleFiltersEnabled) {
+        if (!$multipleFiltersEnabled) {
             return $this->router->getFilter();
         }
 
@@ -749,7 +749,7 @@ class CodeIgniter
      */
     protected function determinePath()
     {
-        if (! empty($this->path)) {
+        if (!empty($this->path)) {
             return $this->path;
         }
 
@@ -794,7 +794,7 @@ class CodeIgniter
         }
 
         // Try to autoload the class
-        if (! class_exists($this->controller, true) || $this->method[0] === '_') {
+        if (!class_exists($this->controller, true) || $this->method[0] === '_') {
             throw PageNotFoundException::forControllerNotFound($this->controller, $this->method);
         }
     }

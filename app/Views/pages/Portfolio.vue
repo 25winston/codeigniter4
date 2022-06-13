@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Pofolio {{ text }}</h1>
+    <h1>Portfolio {{ text }}</h1>
 
     <p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
@@ -15,9 +15,21 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 export default {
-  data: function () {
-    return { text: 'data3' }
+  components: {},
+  setup() {
+    const text = 'test'
+    // const count = ref(0)
+    // const inc = () => {
+    //   count.value++
+    // }
+    return {
+      text,
+      // count,
+      // inc,
+    }
   },
+  mounted() {},
 }
 </script>

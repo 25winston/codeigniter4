@@ -1,7 +1,11 @@
 module.exports = function (grunt) {
   require('dotenv').config()
+  const webpackConfig = require('./webpack.config.js')
+  const moment = require('moment')
+  const _ = require('lodash')
   const open = require('open')
   const port = process.env.PORT || 8080
+  //----
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     cssmin: {
@@ -68,27 +72,30 @@ module.exports = function (grunt) {
         options: {
           sourceMaps: true,
           comments: false, //false = remove comment
-          presets: [
-            [
-              '@babel/preset-env',
-              {
-                targets: 'ie 11, > 5%',
-              },
-            ],
-            [
-              'minify',
-              {
-                builtIns: false,
-                evaluate: false,
-                mangle: true, //true = rename param
-              },
-            ],
-          ],
+          // presets: [
+          //   [
+          //     '@babel/preset-env',
+          //     {
+          //       targets: 'ie 11, > 5%',
+          //     },
+          //   ],
+          //   [
+          //     'minify',
+          //     {
+          //       builtIns: false,
+          //       evaluate: false,
+          //       mangle: true, //true = rename param
+          //     },
+          //   ],
+          // ],
         },
         files: {
           'public/build/bundle.js': [
             // 'app/Views/helper.js',
-            'app/Views/App.js',
+            // './app/Views/pages/Home.js',
+            // './app/Views/pages/About.js',
+            // './app/Views/pages/Portfolio.js',
+            './app/Views/App.js',
             // 'assets/js/function_map.js',
             // 'assets/js/function_map_info.js',
           ],
@@ -113,6 +120,10 @@ module.exports = function (grunt) {
           },
         ],
       },
+    },
+
+    webpack: {
+      myConfig: webpackConfig,
     },
 
     //---------------------------------------------------
@@ -146,23 +157,22 @@ module.exports = function (grunt) {
         },
       },
       scripts: {
-        // files: ['app/Views/*.js'],
-        files: ['app/**/*.js'],
-        tasks: ['babel_multi_files'],
+        files: ['app/Views/*.js'],
+        // tasks: ['babel_multi_files'],
+        tasks: ['webpack'],
         options: {
           livereload: true,
         },
       },
       another: {
-        // files: ['app/**/*.vue'],
-        files: ['app/**/*.vue'],
-        tasks: ['htmlmin:dist'],
+        files: ['app/**/*.vue', 'app/**/*.less'],
+        tasks: ['webpack'],
         options: {
           livereload: true,
         },
       },
       livereload: {
-        files: ['app/**/*.php', 'app/**/*.json', 'app/**/*.vue'],
+        files: ['app/**/*.php', 'app/**/*.json'],
         options: {
           livereload: true,
         },
@@ -178,6 +188,11 @@ module.exports = function (grunt) {
     }
   })
 
+  grunt.registerTask('createVersion', 'Creates an empty file', function () {
+    grunt.file.write('public/version.php', `<?php define('VERSION', 'build${moment().format('YYYYMMDDHHmmss')}'); ?>`)
+  })
+
+  grunt.loadNpmTasks('grunt-webpack')
   grunt.loadNpmTasks('grunt-contrib-concat')
   grunt.loadNpmTasks('grunt-contrib-cssmin')
   grunt.loadNpmTasks('grunt-contrib-less')
@@ -187,18 +202,26 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-shell')
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-htmlmin')
-  grunt.registerTask('default', ['cssmin', 'less', 'concat', 'babel_multi_files'])
-  grunt.registerTask('watchs', [
+
+  const process_grunt = [
     'shell:clear',
-    'cssmin',
-    'less',
-    'concat',
-    'copy:main',
-    'babel_multi_files',
-    'htmlmin:dist',
-    'php',
-    'open',
-    // 'shell:php_spark_serve',
-    'watch',
-  ])
+    // 'cssmin',
+    // 'less',
+    // 'concat',
+    // 'copy:main',
+    // 'babel_multi_files',
+    // 'htmlmin:dist',
+    'webpack',
+    'createVersion',
+  ]
+  grunt.registerTask('default', process_grunt)
+  grunt.registerTask(
+    'watchs',
+    _.concat(process_grunt, [
+      'php',
+      'open',
+      // 'shell:php_spark_serve',
+      'watch',
+    ])
+  )
 }
